@@ -1,0 +1,84 @@
+
+<head>
+  <style>
+    body{
+  font-family:'Arial',sans-serif;
+  margin:0;
+  padding:0;
+  background-color: #fcf5f5;
+}
+header{
+  background-color: ff6b6b;
+  color: purple;
+  text-align: center;
+  padding:20px;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  background-color: #ff8b8b;
+  padding: 10px;
+}
+nav a {
+  color: purple;
+  padding: 14px 20px;
+  text decoration: none;
+  text-align: center;
+}
+section {
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  background-color: pink;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+label, input {
+  margin-bottom: 10px;
+}
+footer{
+  background-color: #ff6b6b;
+  color: white;
+  text-align: center;
+  padding: 10px
+}
+  </style>
+</head><header>
+  <h1>Upcoming Events</h1>
+</header>
+<nav>
+  <a href="#Calendar">Calendar</a>
+  <a href="#upcoming-events">Upcoming Events</a>
+  <a href="#rsvp">RSVP</a>
+</nav>
+<section id="calendar">
+  <h2>Event Calendar</h2>
+  <iframe src="https://calendar.google.com/calendar/embed" width="100%"
+          height="400"></iframe>
+</section>
+<section id="upcoming-events">
+  <h2>Upcoming Events</h2>
+  <ul>
+    <li>Science Fair - October 15th</li>
+    <li>Field Trip - November 10th</li>
+  </ul>
+</section>
+<section id="rsvp">
+  <h2>RSVP for Events</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <label for="attendees">Number of Attendees:</label>
+    <input type="number" id="attendees>"
+           <button type="submit">RSVP</button>
+  </form>
+</section>
+<footer>
+  <p>&copy; 2024 Classroom Events</p>
+</footer>
+         
